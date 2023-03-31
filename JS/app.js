@@ -85,6 +85,33 @@ var d = new Date();
 document.getElementById("yearFooter").innerHTML = d.getFullYear();
 
 //////
+////servises slick_slider
+
+////////////////
+$(document).ready(function () {
+  var $slider = $(".project_slider_inner");
+  var $progressBar = $(".progress");
+  var $progressBarLabel = $(".slider_label");
+
+  $slider.on("beforeChange", function (event, slick, currentSlide, nextSlide) {
+    var calc = (nextSlide / (slick.slideCount - 1)) * 100;
+
+    $progressBar
+      .css("background-size", calc + "% 100%")
+      .attr("aria-valuenow", calc);
+
+    $progressBarLabel.text(calc + "% completed");
+  });
+  $(".project_slider_inner").slick({
+    arrows: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: ".slick_prev_arrow",
+    nextArrow: ".slick_next_arrow",
+  });
+});
 
 // $(".slider_slick_image").on(
 //   "init reInit afterChange",

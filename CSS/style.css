@@ -1,6 +1,6 @@
 * {
   margin: 0px;
-  padding: 0;
+  padding: 0px;
 }
 html {
   scroll-behavior: smooth;
@@ -60,7 +60,7 @@ p {
 .header_inner_nav {
   display: flex;
   align-items: center;
-  /* padding-left: 157px; */
+  padding-left: 157px;
 }
 
 .header_inner_bottoms {
@@ -529,13 +529,13 @@ p {
   content: "";
   text-align: center;
   opacity: 0.25;
-  background-image: url(../images/Ellipse4.png);
+  background-image: url(../images/main/Ellipse4.png);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before {
   opacity: 1;
-  background-image: url(../images/Ellipse5.png);
+  background-image: url(../images/main/Ellipse5.png);
   color: #fff;
 }
 .slick-dots li button {
@@ -900,7 +900,6 @@ p {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
-
   100% {
     -webkit-transform: translateY(15px);
     transform: translateY(15px);
@@ -968,7 +967,7 @@ p {
   align-items: center;
 }
 .looking_fon_fon {
-  background-image: url(../images/VectorBlue.png);
+  background-image: url(../images/main/VectorBlue.png);
   width: 1582px;
   height: 540px;
   z-index: -10;
@@ -1345,7 +1344,7 @@ p {
 /* partners */
 
 .partners {
-  background-image: url(../images/wells.png);
+  background-image: url(../images/main/wells.png);
   height: 1411.5px;
   padding-bottom: 60px;
 }
@@ -1356,8 +1355,9 @@ p {
   align-items: center;
   letter-spacing: 0.1em;
   color: #194484;
-  padding-bottom: 60px;
+  text-align: center;
   text-transform: uppercase;
+  padding: 16% 0px 60px 0px;
 }
 .partners img {
   width: auto;
@@ -3728,7 +3728,7 @@ p {
     bottom: 0px;
     width: 100%;
     height: 550px;
-    background-image: url(../images/footer/footerFonBlue.png);
+    background-image: url(..footer/footerFonBlue.png);
     z-index: 2;
   }
   .footer_title {
