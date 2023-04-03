@@ -22,9 +22,14 @@ $(document)
 
 ///pop up
 let popupLink = document.querySelectorAll(".popup-link");
+let popupLinkss = document.querySelectorAll(".popup-links");
+
 let closePopup = document.querySelector(".popup_close");
+let closePopup1 = document.querySelector(".popup_close1");
+
 let popup = document.querySelector(".popup");
-let popupBody = document.querySelector(".popup_body");
+let popup1 = document.querySelector(".popup1");
+
 // console.log(popupLink);
 // let unlock = true;
 // let timeout = 800;
@@ -48,6 +53,48 @@ popup.addEventListener("click", (e) => {
   if (!e.target.closest(".popup_content")) {
     popup.classList.remove("active");
   }
+});
+
+if (popupLinkss.length > 0) {
+  for (let i = 0; i < popupLinkss.length; i++) {
+    let popupLinki = popupLinkss[i];
+    popupLinki.addEventListener("click", (e) => {
+      e.preventDefault();
+      popup1.classList.add("active");
+    });
+  }
+}
+closePopup1.addEventListener("click", (e) => {
+  e.preventDefault();
+  popup1.classList.remove("active");
+});
+
+popup1.addEventListener("click", (e) => {
+  if (!e.target.closest(".popup_content1")) {
+    popup1.classList.remove("active");
+  }
+});
+// services_serv_card
+let cardAll = document.querySelectorAll(".services_serv_card");
+let cardA = Array.from(cardAll);
+let developA = document.querySelectorAll(".development_colon_all");
+let develop = Array.from(developA);
+console.log(develop);
+
+cardA.forEach((elem) => {
+  elem.addEventListener("click", function () {
+    console.log(elem.dataset.name);
+    
+
+    for (let i = 1; i < develop.length; i++) {
+      let developi = develop[i];
+      console.log(developi);
+      developi.classList.remove("develact")
+      if (elem.dataset.name === developi.dataset.name) {
+        developi.classList.add("develact")
+      }
+    }
+  });
 });
 
 // box-shadow
@@ -133,3 +180,43 @@ $(document).ready(function () {
 //     }
 //   }
 // );
+////accordion
+
+let accordion_card = document.querySelectorAll(".FAQ_accordion_card");
+
+for (let i = 0; i < accordion_card.length; i++) {
+  let accordion_card_nav = accordion_card[i];
+  // console.log(accordion_card_nav);
+  accordion_card_nav.addEventListener("click", function () {
+    for (let i = 0; i < accordion_card.length; i++) {
+      // console.log(this);
+      let accord_card_nav = accordion_card[i];
+      accord_card_nav.classList.remove("content_active");
+    }
+
+    this.classList.toggle("content_active");
+    //
+
+    // let accordion_card_act = document.querySelectorAll(".content_active");
+    // let accordion = Array.from(accordion_card_act);
+    // console.log(accordion);
+
+    // for (let i = 0; i < accordion.length; i++) {
+    //   let accordioni = accordion[i];
+
+    //   accordioni.addEventListener("click", function () {
+    //     for (let i = 0; i < accordion.length; i++) {
+    //       console.log(this);
+    //       let accordioni_act = accordion[i];
+    //       accordioni_act.classList.remove("content_active");
+    //     }
+
+    //     // this.classList.toggle("content_active");
+    //   });
+    // }
+  });
+  // accordion_card_nav.classList.remove("content_active");
+
+  // accord_card_nav.classList.toggle("content_active");i
+  // hideAll(this);
+}
