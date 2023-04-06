@@ -1,13 +1,11 @@
 // burger menu
-let inner_nav = document.querySelector(".header_inner_nav");
-let toggle = document.querySelector(".nav-toggle");
+let inner_nav_white = document.querySelector(".header_inner_nav_white");
+let toggle_white = document.querySelector(".nav-toggle_white");
 
-toggle.addEventListener("click", function () {
-  toggle.classList.toggle("active");
-  inner_nav.classList.toggle("active");
+toggle_white.addEventListener("click", function () {
+  toggle_white.classList.toggle("active");
+  inner_nav_white.classList.toggle("active");
 });
-
-
 
 $(document)
   .ready(function () {
@@ -151,17 +149,6 @@ const shadowFunc = () => {
 };
 setInterval(shadowFunc, 1500);
 
-//// change nav color when scrolling
-let header_ass = document.querySelector(".header_assets");
-const changeColor = () => {
-  if (window.scrollY < 450) {
-    header_ass.classList.remove("new_color");
-  } else {
-    header_ass.classList.add("new_color");
-  }
-};
-window.addEventListener("scroll", changeColor);
-
 /////dinamyc data footer
 var d = new Date();
 document.getElementById("yearFooter").innerHTML = d.getFullYear();
@@ -192,29 +179,36 @@ $(document).ready(function () {
     slidesToScroll: 1,
     prevArrow: ".slick_prev_arrow",
     nextArrow: ".slick_next_arrow",
+    responsive: [
+      {
+        breakpoint: 1050,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 850,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          vertical: true,
+          arrows: false,
+          centerMode: true,
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 });
 
-// $(".slider_slick_image").on(
-//   "init reInit afterChange",
-//   function (event, slick, currentSlide, nextSlide) {
-//     let currentSl = slick.$slides[currentSlide];
-//     let slick_imag = $(currentSl).find(".slick_imag");
-//     let text_clide = slick.$slider[0];
-//     $(".slick_imag").toggleClass("slick_imag_active");
-//     let slick_image_act = $(slick.$slider[0]).find("slick_image_text");
-//     // console.log(slick_image_act);
-
-//     // console.log(text_clide);
-
-//     if (!slick_image_act.hasClass("animate__animated")) {
-//       slick_image_act.addClass("animate__animated");
-//       setTimeout(() => {
-//         slick_image_act.removeClass("animate__animated");
-//       }, 1600);
-//     }
-//   }
-// );
 ////accordion
 
 let accordion_card = document.querySelectorAll(".FAQ_accordion_card");
@@ -230,28 +224,5 @@ for (let i = 0; i < accordion_card.length; i++) {
     }
 
     this.classList.toggle("content_active");
-    //
-
-    // let accordion_card_act = document.querySelectorAll(".content_active");
-    // let accordion = Array.from(accordion_card_act);
-    // console.log(accordion);
-
-    // for (let i = 0; i < accordion.length; i++) {
-    //   let accordioni = accordion[i];
-
-    //   accordioni.addEventListener("click", function () {
-    //     for (let i = 0; i < accordion.length; i++) {
-    //       console.log(this);
-    //       let accordioni_act = accordion[i];
-    //       accordioni_act.classList.remove("content_active");
-    //     }
-
-    //     // this.classList.toggle("content_active");
-    //   });
-    // }
   });
-  // accordion_card_nav.classList.remove("content_active");
-
-  // accord_card_nav.classList.toggle("content_active");i
-  // hideAll(this);
 }
