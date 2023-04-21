@@ -24,12 +24,15 @@ $(document)
 ///pop up
 let popupLink = document.querySelectorAll(".popup-link");
 let popupLinkss = document.querySelectorAll(".popup-links");
+let popupLinkj = document.querySelectorAll(".popup-linkj");
 
 let closePopup = document.querySelector(".popup_close");
 let closePopup1 = document.querySelector(".popup_close1");
+let closePopupj = document.querySelector(".popup_closej");
 
 let popup = document.querySelector(".popup");
 let popup1 = document.querySelector(".popup1");
+let popupj = document.querySelector(".popupj");
 
 // console.log(popupLink);
 // let unlock = true;
@@ -74,6 +77,31 @@ popup1.addEventListener("click", (e) => {
     popup1.classList.remove("active");
   }
 });
+
+//
+if (popupLinkj.length > 0) {
+  for (let i = 0; i < popupLinkj.length; i++) {
+    let popupLinksj = popupLinkj[i];
+    popupLinksj.addEventListener("click", (e) => {
+      e.preventDefault();
+      popupj.classList.add("active");
+    });
+  }
+}
+closePopupj.addEventListener("click", (e) => {
+  e.preventDefault();
+  popupj.classList.remove("active");
+});
+
+popupj.addEventListener("click", (e) => {
+  if (!e.target.closest(".popup_contentj")) {
+    popupj.classList.remove("active");
+  }
+});
+
+
+
+
 // services_serv_card
 let cardAll = document.querySelectorAll(".services_serv_card");
 let cardA = Array.from(cardAll);
@@ -215,14 +243,46 @@ let accordion_card = document.querySelectorAll(".FAQ_accordion_card");
 
 for (let i = 0; i < accordion_card.length; i++) {
   let accordion_card_nav = accordion_card[i];
-  // console.log(accordion_card_nav);
   accordion_card_nav.addEventListener("click", function () {
+
     for (let i = 0; i < accordion_card.length; i++) {
-      // console.log(this);
-      let accord_card_nav = accordion_card[i];
-      accord_card_nav.classList.remove("content_active");
+      let accordion_card_nav = accordion_card[i];
+      // accordion_card_nav.addEventListener("click", function () {
+      // });
+      // this.classList.remove("content_active");
     }
 
     this.classList.toggle("content_active");
   });
+}
+
+//accordion_team
+
+let accordion_in = document.querySelectorAll(".joinacardion_card");
+
+for (let i = 0; i < accordion_in.length; i++) {
+  let accordion_in_nav = accordion_in[i];
+  accordion_in_nav.addEventListener("click", function () {
+    for (let i = 0; i < accordion_in_nav.length; i++) {
+      let accordion_in_navi = accordion_in_nav[i];
+      accordion_in_navi.addEventListener("click", function () {
+        this.classList.remove("content_active");
+      });
+      accordion_in_navi.classList.toggle("content_active");
+    }
+    this.classList.toggle("content_active");
+  });
+}
+
+// 
+function importData() {
+  let input = document.createElement('input');
+  input.type = 'file';
+  input.onchange = _ => {
+    // you can use this method to get file and perform respective operations
+            let files =   Array.from(input.files);
+            console.log(files);
+        };
+  input.click();
+  
 }

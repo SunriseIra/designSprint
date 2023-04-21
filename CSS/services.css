@@ -1413,4 +1413,42 @@ project_slider_slick
   .slick-next {
     right: 30px;
   }
+  .sub_menu_list_white {
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: 25px;
+    width: 340px;
+    padding: 6px 0px 12px 0px;
+    z-index: 120;
+}
+}
+
+@media (max-width: 400px) {
+  .sub_menu_list_white {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 25px;
+    width: 300px;
+    padding: 6px 0px 12px 0px;
+    z-index: 120;
+}
+.sub_menu_list_white > li {
+  padding: 0px 0px 0px 5px;
+  background-color: #212121;
+  background: #ffffff;
+  box-shadow: 2px 4px 16px rgba(158, 158, 158, 0.3);
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.sub_header_inner_bottoms_white {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0d6eb7;
+}
 }
