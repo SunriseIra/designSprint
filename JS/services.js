@@ -57,7 +57,7 @@ popup.addEventListener("click", (e) => {
     popup.classList.remove("active");
   }
 });
-
+//
 if (popupLinkss.length > 0) {
   for (let i = 0; i < popupLinkss.length; i++) {
     let popupLinki = popupLinkss[i];
@@ -99,9 +99,6 @@ popupj.addEventListener("click", (e) => {
   }
 });
 
-
-
-
 // services_serv_card
 let cardAll = document.querySelectorAll(".services_serv_card");
 let cardA = Array.from(cardAll);
@@ -128,6 +125,9 @@ let submenuAll = document.querySelectorAll(".sub_header_inner_bottoms_white");
 let submenu = Array.from(submenuAll);
 let submenuAl = document.querySelectorAll(".sub_header_inner_bottoms");
 let submenuind = Array.from(submenuAl);
+
+let footerAll = document.querySelectorAll(".footer_inner_bottoms");
+let footer = Array.from(footerAll);
 // console.log(submenu);
 
 submenuind.forEach((elem) => {
@@ -145,6 +145,20 @@ submenuind.forEach((elem) => {
   });
 });
 submenu.forEach((elem) => {
+  elem.addEventListener("click", function () {
+    console.log(elem.dataset.name);
+
+    for (let i = 0; i < develop.length; i++) {
+      let developi = develop[i];
+      // console.log(developi);
+      developi.classList.remove("develact");
+      if (elem.dataset.name === developi.dataset.name) {
+        developi.classList.add("develact");
+      }
+    }
+  });
+});
+footer.forEach((elem) => {
   elem.addEventListener("click", function () {
     console.log(elem.dataset.name);
 
@@ -244,7 +258,6 @@ let accordion_card = document.querySelectorAll(".FAQ_accordion_card");
 for (let i = 0; i < accordion_card.length; i++) {
   let accordion_card_nav = accordion_card[i];
   accordion_card_nav.addEventListener("click", function () {
-
     for (let i = 0; i < accordion_card.length; i++) {
       let accordion_card_nav = accordion_card[i];
       // accordion_card_nav.addEventListener("click", function () {
@@ -274,15 +287,41 @@ for (let i = 0; i < accordion_in.length; i++) {
   });
 }
 
-// 
+//
 function importData() {
-  let input = document.createElement('input');
-  input.type = 'file';
-  input.onchange = _ => {
+  let input = document.createElement("input");
+  input.type = "file";
+  input.onchange = (_) => {
     // you can use this method to get file and perform respective operations
-            let files =   Array.from(input.files);
-            console.log(files);
-        };
+    let files = Array.from(input.files);
+    console.log(files);
+  };
   input.click();
-  
+}
+
+// developer 1or 2
+
+let applybutAll = document.querySelectorAll(
+  ".joinacardion_inner_bottom_CONTACT"
+);
+let applybut = Array.from(applybutAll);
+
+let joineteamAll = document.querySelectorAll(".joineteam_page_form_inner_dev");
+let joineteam = Array.from(joineteamAll);
+for (let i = 0; i < applybut.length; i++) {
+  let applybut_nav = applybut[i];
+
+  applybut_nav.addEventListener("click", function () {
+    for (let i = 0; i < joineteam.length; i++) {
+      let joineteam_nav = joineteam[i];
+      joineteam_nav.classList.remove("joineteam_devel");
+
+      // console.log(joineteam_nav.id);
+      if (joineteam_nav.id == applybut_nav.dataset.name) {
+        joineteam_nav.classList.toggle("joineteam_devel");
+
+        // joineteam_nav.classList.remove("joineteam_devel");
+      }
+    }
+  });
 }

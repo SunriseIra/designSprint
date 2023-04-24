@@ -2998,6 +2998,71 @@
         </div>
       </div>
     </section>
+
+    <section class="popuppJoin">
+      <div class="popupj">
+        <div class="popup_bodyj">
+          <div class="popup_contentj">
+            <a href="#" class="popup_closej">&times;</a>
+            <div class="joineteam_form_inner">
+              <div class="joineteam_page_form_inner_title">join the team</div>
+              <div class="joineteam_page_form_inner_dev" id="developer1">
+                Unity Developer 1
+              </div>
+              <div class="joineteam_page_form_inner_dev" id="developer2">
+                Unity Developer 2
+              </div>
+              <form class="subscribe" action="/" method="post">
+                <input
+                  class="jointeam_input_name"
+                  type="url"
+                  name="name"
+                  src=""
+                  placeholder="Full Name
+                  " />
+                <input
+                  type="email"
+                  class="jointeam_input_email"
+                  name="email"
+                  id="email"
+                  placeholder="Email" />
+                <input
+                  type="url"
+                  class="jointeam_input_email"
+                  name="portfoliolink"
+                  id="portfoliolink"
+                  placeholder="Portfolio link" />
+                <span class="jointeam_input_line">
+                  <input
+                    type="url"
+                    class="jointeam_input"
+                    name="portfoliolink"
+                    id="CVFile"
+                    placeholder="Please Attach your CV File..." />
+                  <button
+                    class="jointeam_inner_header_two_white"
+                    onclick="importData()">
+                    SELECT FILE
+                  </button>
+                </span>
+
+                <textarea
+                  name="message"
+                  class="jointeam_input_message"
+                  placeholder="Message"></textarea>
+
+                <span class="jointeam_bottom">
+                  <button class="jointeam_inner_bottom_CONTACT">
+                    Send request
+                  </button>
+                </span>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="social_links">
       <div>
         <div class="icon-bar">
@@ -3092,42 +3157,63 @@
               <div class="footer_block_block">
                 <div class="footer_block footer_colon_s">
                   <div class="footer_title">
-                    <a class="footer_title" href="">Services</a>
+                    <a class="footer_title" href="services.html">Services</a>
                   </div>
                   <nav class="footer_inner_nav">
                     <ul class="footer_colon_menu_list">
                       <li>
-                        <a href="#" class="footer_inner_bottoms"
+                        <a
+                          href="#"
+                          class="footer_inner_bottoms popup-links"
+                          data-name="pop1"
                           >MOBILE APPLICATION DEVELOPMENT</a
                         >
                       </li>
                       <li>
-                        <a href="#" class="footer_inner_bottoms"
+                        <a
+                          href="#"
+                          class="footer_inner_bottoms popup-links"
+                          data-name="pop2"
                           >GAME DEVELOPMENT OUTSOURCING</a
                         >
                       </li>
                       <li>
-                        <a href="#" class="footer_inner_bottoms"
+                        <a
+                          href="#"
+                          class="footer_inner_bottoms popup-links"
+                          data-name="pop3"
                           >VR APP DEVELOPMENT</a
                         >
                       </li>
                       <li>
-                        <a href="#" class="footer_inner_bottoms"
+                        <a
+                          href="#"
+                          class="footer_inner_bottoms popup-links"
+                          data-name="pop4"
                           >DEDICATED DEVELOPERS</a
                         >
                       </li>
                       <li>
-                        <a href="#" class="footer_inner_bottoms"
+                        <a
+                          href="#"
+                          class="footer_inner_bottoms popup-links"
+                          data-name="pop5"
                           >SDK DEVELOPMEN</a
                         >
                       </li>
                       <li>
-                        <a href="#" class="footer_inner_bottoms">
+                        <a
+                          href="#"
+                          class="footer_inner_bottoms popup-links"
+                          data-name="pop6">
                           3D MODELING SERVICES</a
                         >
                       </li>
                       <li>
-                        <a href="#" class="footer_inner_bottoms"
+                        <a
+                          href="#"
+                          class="footer_inner_bottoms popup-links"
+                          data-name="pop7"
                           >AR APP DEVELOPMENT</a
                         >
                       </li>
@@ -3136,45 +3222,63 @@
                 </div>
                 <div class="footer_block footer_colon_s">
                   <div class="footer_title">
-                    <a class="footer_title" href="">Technologies</a>
+                    <a class="footer_title" href="technologies.html"
+                      >Technologies</a
+                    >
                   </div>
                   <nav class="footer_inner_nav">
                     <ul class="footer_colon_menu_list">
                       <li>
-                        <a class="footer_inner_bottoms" href="">Android</a>
+                        <a
+                          class="footer_inner_bottoms"
+                          href="technologies.html#android"
+                          >Android</a
+                        >
                       </li>
                       <li>
-                        <a class="footer_inner_bottoms" href="">IOS</a>
+                        <a
+                          class="footer_inner_bottoms"
+                          href="technologies.html#ios"
+                          >IOS</a
+                        >
                       </li>
                       <li>
-                        <a class="footer_inner_bottoms" href="">Unity</a>
+                        <a
+                          class="footer_inner_bottoms"
+                          href="technologies.html#unity"
+                          >Unity</a
+                        >
                       </li>
                     </ul>
                   </nav>
                 </div>
                 <div class="footer_block footer_colon_s">
                   <div class="footer_title">
-                    <a class="footer_title" href="">Products</a>
+                    <a class="footer_title" href="products.html">Products</a>
                   </div>
                   <div class="footer_title">
-                    <a class="footer_title" href="">Portfolio</a>
+                    <a class="footer_title" href="portfolio.html">Portfolio</a>
                   </div>
                   <div class="footer_title">
-                    <a class="footer_title" href="">Blog</a>
+                    <a class="footer_title" href="blog.html">Blog</a>
                   </div>
                 </div>
                 <div class="footer_block footer_colon_s">
                   <div class="footer_title">
-                    <a class="footer_title" href="">About Us</a>
+                    <a class="footer_title" href="aboutus.html">About Us</a>
                   </div>
                   <nav class="footer_inner_nav">
                     <ul class="footer_colon_menu_list">
                       <li>
                         <a class="footer_inner_bottoms" href="">Contacts</a>
                       </li>
-                      <li><a class="footer_inner_bottoms" href="">Team</a></li>
                       <li>
-                        <a class="footer_inner_bottoms" href=""
+                        <a class="footer_inner_bottoms" href="team.html"
+                          >Team</a
+                        >
+                      </li>
+                      <li>
+                        <a class="footer_inner_bottoms" href="join.html"
                           >Join the Team</a
                         >
                       </li>

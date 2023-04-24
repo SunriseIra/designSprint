@@ -560,9 +560,26 @@ p {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #194484;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
-.jointeam_input  {
+
+.joineteam_page_form_inner_dev {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #242424;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.joineteam_devel {
+  display: block;
+}
+.jointeam_input {
   width: 70%;
   height: 40px;
   font-weight: 400;
@@ -746,17 +763,7 @@ p {
 .popupj .popup_closej:hover {
   color: #fff;
 }
-.joineteam_page_form_inner_title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 39px;
-  text-align: center;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #194484;
-  margin-bottom: 40px;
-}
+
 
 @media (max-width: 1600px) {
   .looking_title_portfolio {
@@ -1259,6 +1266,17 @@ p {
     text-align: center;
     padding-bottom: 50px;
   }
+  .joineteam_page_form_inner_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #194484;
+    margin-bottom: 40px;
+}
 }
 
 @media (max-width: 850px) {
@@ -1382,6 +1400,15 @@ p {
     padding: 0px 50px;
     text-align: center;
   }
+  .popup_contentj {
+    padding: 30px;
+    position: relative;
+    width: 400px;
+    background: #ffffff;
+    border-radius: 6px;
+    z-index: 10;
+    position: relative;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1466,6 +1493,15 @@ p {
     text-align: center;
     padding-bottom: 50px;
   }
+  .popup_contentj {
+    padding: 30px;
+    position: relative;
+    width: 380px;
+    background: #ffffff;
+    border-radius: 6px;
+    z-index: 10;
+    position: relative;
+  }
 }
 
 @media (max-width: 570px) {
@@ -1481,6 +1517,15 @@ p {
     height: 5000px;
     margin-top: 80px;
     padding-bottom: 60px;
+  }
+  .popup_contentj {
+    padding: 30px;
+    position: relative;
+    width: 330px;
+    background: #ffffff;
+    border-radius: 6px;
+    z-index: 10;
+    position: relative;
   }
 }
 
@@ -1501,6 +1546,7 @@ p {
     text-transform: uppercase;
     color: #194484;
   }
+  
 }
 
 @media (max-width: 480px) {
@@ -1540,6 +1586,15 @@ p {
   }
   .team_card img {
     width: 280px;
+  }
+  .popup_contentj {
+    padding: 30px;
+    position: relative;
+    width: 280px;
+    background: #ffffff;
+    border-radius: 6px;
+    z-index: 10;
+    position: relative;
   }
 }
 @media (max-width: 455px) {
