@@ -7,8 +7,6 @@ toggle.addEventListener("click", function () {
   inner_nav.classList.toggle("active");
 });
 
-
-
 $(document)
   .ready(function () {
     $(".slider_slick_image").slick({
@@ -56,7 +54,7 @@ popup.addEventListener("click", (e) => {
     popup.classList.remove("active");
   }
 });
-
+//
 if (popupLinkss.length > 0) {
   for (let i = 0; i < popupLinkss.length; i++) {
     let popupLinki = popupLinkss[i];
@@ -102,6 +100,8 @@ let submenuAll = document.querySelectorAll(".sub_header_inner_bottoms_white");
 let submenu = Array.from(submenuAll);
 let submenuAl = document.querySelectorAll(".sub_header_inner_bottoms");
 let submenuind = Array.from(submenuAl);
+let footerAll = document.querySelectorAll(".footer_inner_bottoms");
+let footer = Array.from(footerAll);
 // console.log(submenu);
 
 submenuind.forEach((elem) => {
@@ -119,6 +119,21 @@ submenuind.forEach((elem) => {
   });
 });
 submenu.forEach((elem) => {
+  elem.addEventListener("click", function () {
+    console.log(elem.dataset.name);
+
+    for (let i = 0; i < develop.length; i++) {
+      let developi = develop[i];
+      // console.log(developi);
+      developi.classList.remove("develact");
+      if (elem.dataset.name === developi.dataset.name) {
+        developi.classList.add("develact");
+      }
+    }
+  });
+});
+
+footer.forEach((elem) => {
   elem.addEventListener("click", function () {
     console.log(elem.dataset.name);
 
