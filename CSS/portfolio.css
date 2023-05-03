@@ -171,7 +171,7 @@ p {
 .blog_section {
   background-image: url(../images/servicespage/Vector\ 7.png);
   height: 4100px;
-  margin-top: 150px;
+  /* margin-top: 150px; */
   padding-bottom: 60px;
 }
 .blog_section_inner {
@@ -298,6 +298,9 @@ p {
 
 .paginationItem:hover {
   color: #8a3dd3;
+}
+.blog_page {
+  display: flex;
 }
 
 /* aboutus_section */
@@ -762,6 +765,11 @@ p {
 }
 .popupj .popup_closej:hover {
   color: #fff;
+}
+
+.contacts_contacts {
+  padding-top: 150px;
+  padding-bottom: 220px;
 }
 
 

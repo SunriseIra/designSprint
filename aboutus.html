@@ -187,7 +187,7 @@
                 </a>
                 <ul class="sub_menu_list_white">
                   <li>
-                    <a href="#" class="sub_header_inner_bottoms_white"
+                    <a href="contactabout.html" class="sub_header_inner_bottoms_white"
                       >CONTACTS</a
                     >
                   </li>
@@ -215,6 +215,19 @@
       </div>
     </header>
 
+    <section class="breadcrumbs">
+      <ul class="breadcrumb">
+        <li><a class="breadcrumb_a" href="index.html">Home</a></li>
+        <!-- <li><a class="breadcrumb_a" href="services.html">Services</a></li>
+        <li>
+          <a class="breadcrumb_a" href="technologies.html">Technologies</a>
+        </li>
+        <li><a class="breadcrumb_a" href="products.html">Products</a></li>
+        <li><a class="breadcrumb_a" href="portfolio.html">Portfolio</a></li> -->
+        <li><a class="breadcrumb_a breadactive" href="aboutus.html">About us</a> </li>
+        <!-- <li>Italy</li> -->
+      </ul>
+    </section>
     <section class="aboutus_section">
       <div class="products_card_all_pro">
         <div class="aboutus_colon_prod ass_animate">
@@ -1020,23 +1033,22 @@
             <a href="#" class="popup_close">&times;</a>
             <div class="contacts_page_form_inner">
               <div class="contacts_page_form_inner_title">CONTACT US</div>
-              <form class="subscribe" action="/" method="post">
+              <form class="subscribe" action="https://formsubmit.co/sunrisebeamis@yahoo.com" method="post">
                 <input
                   class="contacts_input_name"
-                  type="url"
                   name="name"
                   src=""
-                  placeholder="Name" />
+                  placeholder="Name" required  />
                 <input
                   type="email"
                   class="contacts_input_email"
                   name="email"
                   id="email"
-                  placeholder="Email" />
+                  placeholder="Email"  required />
                 <textarea
                   name="message"
                   class="contacts_input_message form_message"
-                  placeholder="Message"></textarea>
+                  placeholder="Message" required ></textarea>
 
                 <span class="contacts_bottom">
                   <button class="contacts_inner_bottom_CONTACT">
@@ -1606,6 +1618,7 @@
                     <img
                       src="./images/servicespage/girl_green_hair.svg"
                       alt="" />
+                      
                   </div>
                 </div>
               </div>
@@ -2000,33 +2013,30 @@
               <div class="joineteam_page_form_inner_dev" id="developer2">
                 Unity Developer 2
               </div>
-              <form class="subscribe" action="/" method="post">
+              <form class="subscribe" action="https://formsubmit.co/sunrisebeamis@yahoo.com" method="post">
                 <input
                   class="jointeam_input_name"
-                  type="url"
                   name="name"
-                  src=""
-                  placeholder="Full Name
-                  " />
+                  placeholder="Full Name"  required/>
                 <input
                   type="email"
                   class="jointeam_input_email"
                   name="email"
                   id="email"
-                  placeholder="Email" />
+                  placeholder="Email" required />
                 <input
-                  type="url"
+              
                   class="jointeam_input_email"
                   name="portfoliolink"
                   id="portfoliolink"
-                  placeholder="Portfolio link" />
+                  placeholder="Portfolio link" required />
                 <span class="jointeam_input_line">
                   <input
-                    type="url"
+                   
                     class="jointeam_input"
                     name="portfoliolink"
                     id="CVFile"
-                    placeholder="Please Attach your CV File..." />
+                    placeholder="Please Attach your CV File..." required />
                   <button
                     class="jointeam_inner_header_two_white"
                     onclick="importData()">
@@ -2037,7 +2047,7 @@
                 <textarea
                   name="message"
                   class="jointeam_input_message"
-                  placeholder="Message"></textarea>
+                  placeholder="Message" required></textarea>
 
                 <span class="jointeam_bottom">
                   <button class="jointeam_inner_bottom_CONTACT">
@@ -2257,7 +2267,7 @@
                   <nav class="footer_inner_nav">
                     <ul class="footer_colon_menu_list">
                       <li>
-                        <a class="footer_inner_bottoms" href="">Contacts</a>
+                        <a class="footer_inner_bottoms" href="contactabout.html">Contacts</a>
                       </li>
                       <li>
                         <a class="footer_inner_bottoms" href="team.html"
