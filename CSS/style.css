@@ -612,6 +612,10 @@ p {
 }
 
 /* breadcrumbs */
+.breadcrumbs {
+padding:150px  0px  0px  100px;
+}
+
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
@@ -624,11 +628,16 @@ ul.breadcrumb li {
 ul.breadcrumb li + li:before {
   padding: 8px;
   color: black;
-  content: "/\00a0";
+  content: ">>\00a0";
 }
 ul.breadcrumb li a {
   color: #0275d8;
   text-decoration: none;
+}
+.breadactive {
+  color: #0787f7;
+  font-weight: 700;
+
 }
 ul.breadcrumb li a.is-active:focus {
   background: #edf1f5;
