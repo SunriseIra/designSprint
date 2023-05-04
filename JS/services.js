@@ -256,35 +256,38 @@ $(document).ready(function () {
 let accordion_card = document.querySelectorAll(".FAQ_accordion_card");
 
 for (let i = 0; i < accordion_card.length; i++) {
-  let accordion_card_nav = accordion_card[i];
-  accordion_card_nav.addEventListener("click", function () {
-    for (let i = 0; i < accordion_card.length; i++) {
-      let accordion_card_nav = accordion_card[i];
-      // accordion_card_nav.addEventListener("click", function () {
-      // });
-      // this.classList.remove("content_active");
-    }
-
+  accordion_card[i].onclick = function() {
     this.classList.toggle("content_active");
-  });
+    hideAll(this);
+  };
 }
+function hideAll(exceptThis) {
+  for (var i = 0; i < accordion_card.length; i++) {
+    if (accordion_card[i] !== exceptThis) {
+      accordion_card[i].classList.remove("content_active");
+    }
+  }
+}
+
+
+
 
 //accordion_team
 
 let accordion_in = document.querySelectorAll(".joinacardion_card");
 
 for (let i = 0; i < accordion_in.length; i++) {
-  let accordion_in_nav = accordion_in[i];
-  accordion_in_nav.addEventListener("click", function () {
-    for (let i = 0; i < accordion_in_nav.length; i++) {
-      let accordion_in_navi = accordion_in_nav[i];
-      accordion_in_navi.addEventListener("click", function () {
-        this.classList.remove("content_active");
-      });
-      accordion_in_navi.classList.toggle("content_active");
-    }
+  accordion_in[i].onclick = function() {
     this.classList.toggle("content_active");
-  });
+    hideAall(this);
+  };
+}
+function hideAall(exceptThis) {
+  for (var i = 0; i < accordion_in.length; i++) {
+    if (accordion_in[i] !== exceptThis) {
+      accordion_in[i].classList.remove("content_active");
+    }
+  }
 }
 
 //

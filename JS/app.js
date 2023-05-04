@@ -235,38 +235,15 @@ $(document).ready(function () {
 let accordion_card = document.querySelectorAll(".FAQ_accordion_card");
 
 for (let i = 0; i < accordion_card.length; i++) {
-  let accordion_card_nav = accordion_card[i];
-  // console.log(accordion_card_nav);
-  accordion_card_nav.addEventListener("click", function () {
-    for (let i = 0; i < accordion_card.length; i++) {
-      // console.log(this);
-      let accord_card_nav = accordion_card[i];
-      accord_card_nav.classList.remove("content_active");
-    }
-
+  accordion_card[i].onclick = function() {
     this.classList.toggle("content_active");
-    //
-
-    // let accordion_card_act = document.querySelectorAll(".content_active");
-    // let accordion = Array.from(accordion_card_act);
-    // console.log(accordion);
-
-    // for (let i = 0; i < accordion.length; i++) {
-    //   let accordioni = accordion[i];
-
-    //   accordioni.addEventListener("click", function () {
-    //     for (let i = 0; i < accordion.length; i++) {
-    //       console.log(this);
-    //       let accordioni_act = accordion[i];
-    //       accordioni_act.classList.remove("content_active");
-    //     }
-
-    //     // this.classList.toggle("content_active");
-    //   });
-    // }
-  });
-  // accordion_card_nav.classList.remove("content_active");
-
-  // accord_card_nav.classList.toggle("content_active");i
-  // hideAll(this);
+    hideAll(this);
+  };
+}
+function hideAll(exceptThis) {
+  for (var i = 0; i < accordion_card.length; i++) {
+    if (accordion_card[i] !== exceptThis) {
+      accordion_card[i].classList.remove("content_active");
+    }
+  }
 }
