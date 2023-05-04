@@ -99,8 +99,8 @@ p {
 .sub_menu_list {
   display: none;
   position: absolute;
-  left: 0;
-  top: 30px;
+  left: 25px;
+  top: 25px;
   width: 355px;
   padding: 6px 0px 12px 0px;
 }
@@ -3055,8 +3055,8 @@ ul.breadcrumb.is-active:focus {
   .sub_menu_list {
     display: none;
     position: absolute;
-    left: 130px;
-    top: 0px;
+    left: 25px;
+    top: 25px;
     width: 355px;
     padding: 0px 0px 12px 0px;
     z-index: 150;

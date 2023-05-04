@@ -85,6 +85,7 @@ p {
 .portfolio_card_image_img {
   box-sizing: border-box;
   width: 553px;
+  height: 100%;
   box-shadow: 0px 2px 16px rgba(29, 51, 107, 0.15);
 }
 
