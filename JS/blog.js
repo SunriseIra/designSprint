@@ -10,7 +10,9 @@ window.addEventListener("load", (event) => {
   const urlParams = new URLSearchParams(queryString);
 
   let myactivePage = +urlParams.get("page") === 0 ? 1 : +urlParams.get("page");
-  let activePage = myactivePage;  // console.log(currentPage);
+  let activePage = myactivePage;  
+  // console.log(activePage);
+  // console.log(current_page);
 
   
   let pageSpan = document.querySelector(".blog_page");
@@ -21,11 +23,13 @@ window.addEventListener("load", (event) => {
     let start = steps * page;
     let end =start + steps;
     let paginatedItems = items.slice(start, end);
+    console.log(activePage);
+  console.log(current_page);
     for (let i = 0; i < paginatedItems.length; i++) {
       let item = paginatedItems[i];
 
       item.classList.add("blog_card_active");
-      // item.classList.remove("blog_card_active")
+      // this.classList.remove("blog_card_active")
 
     }
   }
