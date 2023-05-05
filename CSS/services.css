@@ -811,8 +811,8 @@ project_slider_slick
     padding-left: 100px;
   }
   .faq {
-    padding: 109px 245px 250px 245px;
-  }
+    padding: 109px 230px 250px 240px;
+}
 }
 
 @media (max-width: 1400px) {

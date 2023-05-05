@@ -11,9 +11,6 @@ window.addEventListener("load", (event) => {
 
   let myactivePage = +urlParams.get("page") === 0 ? 1 : +urlParams.get("page");
   let activePage = myactivePage;  
-  // console.log(activePage);
-  // console.log(current_page);
-
   
   let pageSpan = document.querySelector(".blog_page");
   let pagesCount = Math.ceil(blog_card_all.length / steps);
@@ -23,17 +20,10 @@ window.addEventListener("load", (event) => {
     let start = steps * page;
     let end =start + steps;
     let paginatedItems = items.slice(start, end);
-    console.log(activePage);
-  console.log(current_page);
-    for (let i = 0; i < paginatedItems.length; i++) {
-      let item = paginatedItems[i];
 
-      item.classList.add("blog_card_active");
-      // this.classList.remove("blog_card_active")
-
-    }
-  }
+  $('#pagingBox').children().css('display', 'none').slice(start, end).css('display', 'block');
  
+  }
 
  function SetupPagination (items, pageSpan, steps,page) {
     pageSpan.innerHTML = '';
@@ -77,20 +67,8 @@ function PaginationButton (page, items, pageSpan, row_page) {
   } 
 
   liEl.addEventListener("click", function () {
-    // page--;
-    // let start = row_page * page;
-    // let end =start + row_page;
-    // let paginatedItems = items.slice(start, end);
-    // for (let i = 0; i < paginatedItems.length; i++) {
-    //   let item = paginatedItems[i];
-    //   item.classList.remove("blog_card_active");
-
-    // }
 
     DisplayList (items, steps, page); 
-
-
-
     let currentItemLi = document.querySelector(".paginationItem_active");
     let currentPage = +currentItemLi.innerText;
      const queryString = window.location.search;
@@ -113,14 +91,8 @@ function PaginationButton (page, items, pageSpan, row_page) {
 
 }
 
-
-
-
-
 DisplayList (blog_card_all, steps, current_page);
 
 SetupPagination (blog_card_all, pageSpan, steps,current_page)
-
-
 
 });
