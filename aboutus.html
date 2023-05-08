@@ -30,11 +30,6 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-    <!-- <link
-      rel="stylesheet"
-      href="https://kit.fontawesome.com/9dca6ed803.css"
-      crossorigin="anonymous" /> -->
     <link
       rel="stylesheet"
       type="text/css"
@@ -218,14 +213,7 @@
     <section class="breadcrumbs">
       <ul class="breadcrumb">
         <li><a class="breadcrumb_a" href="index.html">Home</a></li>
-        <!-- <li><a class="breadcrumb_a" href="services.html">Services</a></li>
-        <li>
-          <a class="breadcrumb_a" href="technologies.html">Technologies</a>
-        </li>
-        <li><a class="breadcrumb_a" href="products.html">Products</a></li>
-        <li><a class="breadcrumb_a" href="portfolio.html">Portfolio</a></li> -->
-        <li><a class="breadcrumb_a breadactive" href="aboutus.html">About us</a> </li>
-        <!-- <li>Italy</li> -->
+        <li><a class="breadcrumb_a breadactive" href="#">About us</a> </li>
       </ul>
     </section>
     <section class="aboutus_section">
@@ -1037,7 +1025,7 @@
                 <input
                   class="contacts_input_name"
                   name="name"
-                  src=""
+
                   placeholder="Name" required  />
                 <input
                   type="email"
@@ -1045,13 +1033,14 @@
                   name="email"
                   id="email"
                   placeholder="Email"  required />
+                  <p id="message"></p>
                 <textarea
                   name="message"
                   class="contacts_input_message form_message"
                   placeholder="Message" required ></textarea>
 
                 <span class="contacts_bottom">
-                  <button class="contacts_inner_bottom_CONTACT">
+                  <button class="contacts_inner_bottom_CONTACT"  id="btn">
                     Send request
                   </button>
                 </span>
@@ -1970,12 +1959,10 @@
 
           <div class="contacts_page_form">
             <div class="contacts_page_form_inner">
-              <form class="subscribe" action="/" method="post">
-                <input
+              <form class="subscribe" action="https://formsubmit.co/sunrisebeamis@yahoo.com" method="post">
+                <input 
                   class="contacts_input_name"
-                  type="url"
                   name="name"
-                  src=""
                   placeholder="Name" />
                 <input
                   type="email"
@@ -1983,13 +1970,14 @@
                   name="email"
                   id="email"
                   placeholder="Email" />
+                  <p id="message"></p>
                 <textarea
                   name="message"
                   class="contacts_input_message form_message"
                   placeholder="Message"></textarea>
 
                 <span class="contacts_bottom">
-                  <button class="contacts_inner_bottom_CONTACT">
+                  <button class="contacts_inner_bottom_CONTACT"  id="btn">
                     Send request
                   </button>
                 </span>
@@ -2024,15 +2012,14 @@
                   name="email"
                   id="email"
                   placeholder="Email" required />
+                  <p id="message"></p>
                 <input
-              
                   class="jointeam_input_email"
                   name="portfoliolink"
                   id="portfoliolink"
                   placeholder="Portfolio link" required />
                 <span class="jointeam_input_line">
-                  <input
-                   
+                  <input            
                     class="jointeam_input"
                     name="portfoliolink"
                     id="CVFile"
@@ -2050,7 +2037,7 @@
                   placeholder="Message" required></textarea>
 
                 <span class="jointeam_bottom">
-                  <button class="jointeam_inner_bottom_CONTACT">
+                  <button class="jointeam_inner_bottom_CONTACT" id="btn"> 
                     Send request
                   </button>
                 </span>

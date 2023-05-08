@@ -239,8 +239,10 @@
                 market.
               </div>
               <div class="slick_image_bottoms">
-                <button class="header_inner_bottom">MORE</button>
-                <button class="header_inner_bottom_CONTACT popup-link">
+                
+                <button class="header_inner_bottom">
+                  <a href="error.html"> MORE  </a></button>
+                <button class="header_inner_bottom_CONTACT popup-link" >
                   CONTACT US
                 </button>
               </div>
@@ -280,7 +282,7 @@
               </div>
               <div class="slick_image_bottoms_two">
                 <button class="header_inner_bottom">MORE</button>
-                <button class="header_inner_bottom_CONTACT popup-link">
+                <button class="header_inner_bottom_CONTACT popup-link" >
                   CONTACT US
                 </button>
               </div>
@@ -315,7 +317,7 @@
               </div>
               <div class="slick_image_bottoms_two">
                 <button class="header_inner_bottom">MORE</button>
-                <button class="header_inner_bottom_CONTACT popup-link">
+                <button class="header_inner_bottom_CONTACT popup-link" >
                   CONTACT US
                 </button>
               </div>
@@ -388,13 +390,20 @@
           </div>
           <div class="technologies_page_image">
             <div class="page_image_android">
-              <img src="./images/main/android.png" alt="" />
+              <a href="technologies.html">
+                <img src="./images/main/android.png" alt="" />
+              </a>
             </div>
             <div class="page_image_apple">
-              <img src="./images/main/apple.png" alt="" />
+              <a href="error.html">
+                <img src="./images/main/apple.png" alt="" />
+              </a>
             </div>
             <div class="page_image_unity">
-              <img src="./images/main/unity.png" alt="" />
+              <a href="error.html">
+                <img src="./images/main/unity.png" alt="" />
+
+              </a>
             </div>
           </div>
           <div class="technologies_page_sub_inner">
@@ -3084,7 +3093,6 @@
                 <input
                   class="contacts_input_name"
                   name="name"
-                  src=""
                   placeholder="Name" required  />
                 <input
                   type="email"
@@ -3092,13 +3100,14 @@
                   name="email"
                   id="email"
                   placeholder="Email"  required />
+                  <p id="message"></p>
                 <textarea
                   name="message"
                   class="contacts_input_message form_message"
                   placeholder="Message" required ></textarea>
 
                 <span class="contacts_bottom">
-                  <button class="contacts_inner_bottom_CONTACT">
+                  <button class="contacts_inner_bottom_CONTACT" id="btn">
                     Send request
                   </button>
                 </span>
@@ -3949,15 +3958,14 @@
                   name="email"
                   id="email"
                   placeholder="Email" required />
+                  <p id="message"></p>
                 <input
-              
                   class="jointeam_input_email"
                   name="portfoliolink"
                   id="portfoliolink"
                   placeholder="Portfolio link" required />
                 <span class="jointeam_input_line">
                   <input
-                   
                     class="jointeam_input"
                     name="portfoliolink"
                     id="CVFile"
@@ -3968,14 +3976,13 @@
                     SELECT FILE
                   </button>
                 </span>
-
                 <textarea
                   name="message"
                   class="jointeam_input_message"
                   placeholder="Message" required></textarea>
 
                 <span class="jointeam_bottom">
-                  <button class="jointeam_inner_bottom_CONTACT">
+                  <button class="jointeam_inner_bottom_CONTACT" id="btn">
                     Send request
                   </button>
                 </span>
@@ -4158,12 +4165,10 @@
 
           <div class="contacts_page_form">
             <div class="contacts_page_form_inner">
-              <form class="subscribe" action="https://formsubmit.co/sunrisebeamis@yahoo.com" method="post">
+              <form name="form1" class="subscribe" action="https://formsubmit.co/sunrisebeamis@yahoo.com" method="post">
                 <input
                   class="contacts_input_name"
-                 
-                  name="name"
-                 
+                  name="name" 
                   placeholder="Name" required />
                 <input
                   type="email"
@@ -4171,13 +4176,14 @@
                   name="email"
                   id="email"
                   placeholder="Email" required />
+                  <p id="message"></p>
                 <textarea
                   name="message"
                   class="contacts_input_message form_message"
                   placeholder="Message" required ></textarea>
 
                 <span class="contacts_bottom">
-                  <button class="contacts_inner_bottom_CONTACT">
+                  <button class="contacts_inner_bottom_CONTACT" id="btn">
                     Send request
                   </button>
                 </span>

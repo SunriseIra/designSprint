@@ -219,18 +219,11 @@
     <section class="breadcrumbs">
       <ul class="breadcrumb">
         <li><a class="breadcrumb_a" href="index.html">Home</a></li>
-        <!-- <li><a class="breadcrumb_a" href="services.html">Services</a></li>
-        <li>
-          <a class="breadcrumb_a" href="technologies.html">Technologies</a>
-        </li>
-        <li><a class="breadcrumb_a" href="products.html">Products</a></li>
-        <li><a class="breadcrumb_a" href="portfolio.html">Portfolio</a></li> -->
         <li><a class="breadcrumb_a" href="aboutus.html">About us</a> </li>
         <li>
-          <a class="breadcrumb_a  breadactive" href="contactabout.html">Contacts</a>
+          <a class="breadcrumb_a  breadactive" href="#">Contacts</a>
         </li>
 
-        <!-- <li>Italy</li> -->
       </ul>
     </section>
     <section class="contacts_contacts">
@@ -271,7 +264,6 @@
                 alt=""
                 class="contacts_imag" />
               <div class="contacts_data_text">
-                <!-- <a href="https://api.whatsapp.com/send?phone=0956808684">1 (917) 231-1975</a> -->
                 <a class="footer_text" href="tel:+38 (093) 345 56 77"
                   >+38 (093) 345 56 77</a
                 >
@@ -306,8 +298,7 @@
                 <a
                   class="footer_text"
                   href="https://www.facebook.com/stansassets/"
-                  >facebook.com/Stanassets</a
-                >
+                  >facebook.com/Stanassets</a>
               </div>
             </div>
           </div>
@@ -318,19 +309,15 @@
             <div class="contacts_page_image_leter animate_v2">
               <img src="./images/contacts/leter.svg" alt="" />
             </div>
-  
             <div class="contacts_page_image_phoneOne animate_v1">
               <img src="./images/contacts/phoneOne.svg" alt="" />
             </div>
-  
             <div class="contacts_page_form">
               <div class="contacts_page_form_inner">
-                <form class="subscribe" action="/" method="post">
+                <form class="subscribe" action="https://formsubmit.co/sunrisebeamis@yahoo.com" method="post">
                   <input
                     class="contacts_input_name"
-                    type="url"
                     name="name"
-                    src=""
                     placeholder="Name" />
                   <input
                     type="email"
@@ -338,13 +325,13 @@
                     name="email"
                     id="email"
                     placeholder="Email" />
+                    <p id="message"></p>
                   <textarea
                     name="message"
                     class="contacts_input_message form_message"
                     placeholder="Message"></textarea>
-  
                   <span class="contacts_bottom">
-                    <button class="contacts_inner_bottom_CONTACT">
+                    <button class="contacts_inner_bottom_CONTACT" id="btn">
                       Send request
                     </button>
                   </span>
@@ -386,7 +373,6 @@
                   <input
                     class="contacts_input_name"
                     name="name"
-                    src=""
                     placeholder="Name" required  />
                   <input
                     type="email"
@@ -394,13 +380,14 @@
                     name="email"
                     id="email"
                     placeholder="Email"  required />
+                    <p id="message"></p>
                   <textarea
                     name="message"
                     class="contacts_input_message form_message"
                     placeholder="Message" required ></textarea>
   
                   <span class="contacts_bottom">
-                    <button class="contacts_inner_bottom_CONTACT">
+                    <button class="contacts_inner_bottom_CONTACT" id="btn">
                       Send request
                     </button>
                   </span>
@@ -435,6 +422,7 @@
                     name="email"
                     id="email"
                     placeholder="Email" required />
+                    <p id="message"></p>
                   <input
                 
                     class="jointeam_input_email"
@@ -461,7 +449,7 @@
                     placeholder="Message" required></textarea>
   
                   <span class="jointeam_bottom">
-                    <button class="jointeam_inner_bottom_CONTACT">
+                    <button class="jointeam_inner_bottom_CONTACT" id="btn">
                       Send request
                     </button>
                   </span>
