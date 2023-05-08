@@ -1948,6 +1948,29 @@ ul.breadcrumb.is-active:focus {
   transform: rotate(-45deg) translate3d(0px, 3px, 0);
 }
 
+
+.error .subscribe {
+  opacity: 1;
+}
+
+.error .myelem {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(247, 5, 17, 0.137);
+  border: 2px solid #b40606;
+}
+
+.question_span {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 10px;
+  color: rgb(223, 5, 5);
+  opacity: 0;
+  /* margin: -20px;
+  margin-left: 20px;
+  text-align: left; */
+}
+
 @media (max-width: 1600px) {
   /*  */
   .slick_imag_one_img {

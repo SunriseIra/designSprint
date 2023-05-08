@@ -772,7 +772,7 @@ p {
   padding-bottom: 220px;
 }
 /* Error */
-.error {
+.error_page {
   padding:150px 0px 180px 0px ;
   display: flex;
   justify-content: center;

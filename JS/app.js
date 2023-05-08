@@ -265,3 +265,44 @@ button.addEventListener('click',()=>{
       text.innerText="Invalid email";
     }
 })
+
+//// form
+//// form
+let formAll = document.querySelectorAll(".subscribe");
+let form = Array.from(formAll);
+// console.log(form);
+let buttonn = document.querySelector("#btn");
+
+
+
+form.forEach((elem)=> {
+  console.log(elem)
+
+elem.addEventListener("submit", function (event) {
+  console.log(11111)
+  event.preventDefault();
+  let fname = document.querySelector(".contacts_input_name");
+  let email = document.querySelector(".contacts_input_email");
+  let message = document.querySelector(".form_message");
+
+  if (
+    fname.value.length !== 0 &&
+    email.value.length !== 0 &&
+    message.value.length !== 0
+  ) {
+    let myelem = document.querySelectorAll(".myelem");
+    myelem.forEach(function (elem) {
+      elem.parentNode.classList.remove("error");
+    });
+  } else {
+    let myelem = document.querySelectorAll(".myelem");
+    console.log(myelem);
+
+    myelem.forEach(function (elem) {
+      if (elem.value.length === 0) {
+        elem.parentNode.classList.add("error");
+      }
+    });
+  }
+});
+})
