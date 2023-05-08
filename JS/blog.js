@@ -96,3 +96,4 @@ DisplayList (blog_card_all, steps, current_page);
 SetupPagination (blog_card_all, pageSpan, steps,current_page)
 
 });
+

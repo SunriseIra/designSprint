@@ -78,6 +78,10 @@ p {
   color: #ffffff;
 }
 
+.header_inner_bottom a {
+  text-decoration: none;
+  color: #ffffff;
+}
 .header_inner_bottoms:hover {
   color: #44c9ff;
 }
@@ -905,6 +909,7 @@ ul.breadcrumb.is-active:focus {
 
   animation: pincers 2s ease-in-out forwards infinite alternate;
 }
+
 .ass_animate:hover .circle,
 .ass_animate:hover .unity {
   animation: circles 3s ease-in-out infinite alternate;
@@ -1436,7 +1441,6 @@ ul.breadcrumb.is-active:focus {
   padding: 41px 0px;
   margin-bottom: 30px;
   /* opacity: 0.6; */
-  cursor: pointer;
   transition: 0.5s;
   height: 50px;
 }

@@ -47,6 +47,7 @@
     <title>Services</title>
   </head>
   <body>
+
     <header class="header_assets">
       <div class="header_assets_fon_white">
         <div class="header_inner_white">
@@ -214,11 +215,7 @@
     <section class="breadcrumbs">
       <ul class="breadcrumb">
         <li><a class="breadcrumb_a" href="index.html">Home</a></li>
-        <li><a class="breadcrumb_a breadactive" href="services.html">Services</a></li>
-        <!-- <li>
-          <a class="breadcrumb_a breadactive" href="technologies.html">Technologies</a>
-        </li> -->
-        <!-- <li><a class="breadcrumb_a breadactive" href="products.html">Products</a></li> -->
+        <li><a class="breadcrumb_a breadactive" href="#">Services</a></li>
         
       </ul>
     </section>
@@ -1456,12 +1453,10 @@
 
           <div class="contacts_page_form">
             <div class="contacts_page_form_inner">
-              <form class="subscribe" action="/" method="post">
+              <form class="subscribe" action="https://formsubmit.co/sunrisebeamis@yahoo.com" method="post">
                 <input
                   class="contacts_input_name"
-                  type="url"
                   name="name"
-                  src=""
                   placeholder="Name" />
                 <input
                   type="email"
@@ -1469,13 +1464,14 @@
                   name="email"
                   id="email"
                   placeholder="Email" />
+                  <p id="message"></p>
                 <textarea
                   name="message"
                   class="contacts_input_message form_message"
                   placeholder="Message"></textarea>
 
                 <span class="contacts_bottom">
-                  <button class="contacts_inner_bottom_CONTACT">
+                  <button class="contacts_inner_bottom_CONTACT" id="btn">
                     Send request
                   </button>
                 </span>
@@ -2577,7 +2573,6 @@
                 <input
                   class="contacts_input_name"
                   name="name"
-                  src=""
                   placeholder="Name" required  />
                 <input
                   type="email"
@@ -2585,13 +2580,13 @@
                   name="email"
                   id="email"
                   placeholder="Email"  required />
+                  <p id="message"></p>
                 <textarea
                   name="message"
                   class="contacts_input_message form_message"
                   placeholder="Message" required ></textarea>
-
                 <span class="contacts_bottom">
-                  <button class="contacts_inner_bottom_CONTACT">
+                  <button class="contacts_inner_bottom_CONTACT" id="btn">
                     Send request
                   </button>
                 </span>
@@ -2626,15 +2621,14 @@
                   name="email"
                   id="email"
                   placeholder="Email" required />
+                  <p id="message"></p>
                 <input
-              
                   class="jointeam_input_email"
                   name="portfoliolink"
                   id="portfoliolink"
                   placeholder="Portfolio link" required />
                 <span class="jointeam_input_line">
-                  <input
-                   
+                  <input 
                     class="jointeam_input"
                     name="portfoliolink"
                     id="CVFile"
@@ -2645,14 +2639,13 @@
                     SELECT FILE
                   </button>
                 </span>
-
                 <textarea
                   name="message"
                   class="jointeam_input_message"
                   placeholder="Message" required></textarea>
 
                 <span class="jointeam_bottom">
-                  <button class="jointeam_inner_bottom_CONTACT">
+                  <button class="jointeam_inner_bottom_CONTACT" id="btn">
                     Send request
                   </button>
                 </span>
