@@ -329,7 +329,6 @@ for (let i = 0; i < applybut.length; i++) {
   });
 }
 
-
 ///validation email
 
 const email = document.querySelector('input[name=email]');
@@ -343,49 +342,49 @@ const validateEmail= (email) => {
 
 button.addEventListener('click',()=>{
     if(validateEmail(email.value)){
-      text.innerText="Valid email";
+      // text.innerText="Valid email";
     }else{
       text.innerText="Invalid email";
     }
 })
 
+
 //// form
-let formAll = document.querySelectorAll(".subscribe");
-let form = Array.from(formAll);
+// let formAll = document.querySelectorAll(".subscribe");
+// let form = Array.from(formAll);
 // console.log(form);
-let buttonn = document.querySelector("#btn");
+// // let buttonn = document.querySelector("#btn");
 
 
 
-form.forEach((elem)=> {
-  console.log(elem)
+// form.forEach((elem)=> {
+//   console.log(elem)
 
-elem.addEventListener("submit", function (event) {
-  console.log(11111)
+// elem.addEventListener("submit", function (event) {
 
-  event.preventDefault();
-  let fname = document.querySelector(".contacts_input_name");
-  let email = document.querySelector(".contacts_input_email");
-  let message = document.querySelector(".form_message");
+//   event.preventDefault();
+//   let fname = document.querySelector(".contacts_input_name");
+//   let email = document.querySelector(".contacts_input_email");
+//   let message = document.querySelector(".form_message");
 
-  if (
-    fname.value.length !== 0 &&
-    email.value.length !== 0 &&
-    message.value.length !== 0
-  ) {
-    let myelem = document.querySelectorAll(".myelem");
-    myelem.forEach( (elem) => {
-      elem.parentNode.classList.remove("error");
-    });
-  } else {
-    let myelem = document.querySelectorAll(".myelem");
-    // console.log(myelem);
+//   if (
+//     fname.value.length !== 0 &&
+//     email.value.length !== 0 &&
+//     message.value.length !== 0
+//   ) {
+//     let myelem = document.querySelectorAll(".myelem");
+//     myelem.forEach( (elem) => {
+//       elem.parentNode.classList.remove("error");
+//     });
+//   } else {
+//     let myelem = document.querySelectorAll(".myelem");
 
-    myelem.forEach( (elem) => {
-      if (elem.value.length === 0) {
-        elem.parentNode.classList.add("error");
-      }
-    });
-  }
-});
-})
+//     myelem.forEach( (elem) => {
+//       if (elem.value.length === 0) {
+//         elem.parentNode.classList.add("error");
+//       }
+//     });
+//   }
+// });
+// })
+

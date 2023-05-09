@@ -1802,6 +1802,65 @@
           </div>
         </div>
       </section>
+      <section class="popuppJoin">
+        <div class="popupj">
+          <div class="popup_bodyj">
+            <div class="popup_contentj">
+              <a href="#" class="popup_closej">&times;</a>
+              <div class="joineteam_form_inner">
+                <div class="joineteam_page_form_inner_title">join the team</div>
+                <div class="joineteam_page_form_inner_dev" id="developer1">
+                  Unity Developer 1
+                </div>
+                <div class="joineteam_page_form_inner_dev" id="developer2">
+                  Unity Developer 2
+                </div>
+                <form class="subscribe" name="form1" action="https://formsubmit.co/sunrisebeamis@yahoo.com" method="post">
+                  <input
+                    class="jointeam_input_name myelem"
+                    name="name"
+                    placeholder="Full Name"  required/>
+                  <input
+                    type="email"
+                    class="jointeam_input_email myelem"
+                    name="email"
+                    id="email"
+                    placeholder="Email" required />
+                    <p id="message"></p>
+                  <input
+                    class="jointeam_input_email myelem"
+                    name="portfoliolink"
+                    id="portfoliolink"
+                    placeholder="Portfolio link" required />
+                  <span class="jointeam_input_line">
+                    <input 
+                      class="jointeam_input myelem"
+                      name="portfoliolink"
+                      id="CVFile"
+                      placeholder="Please Attach your CV File..." required />
+                    <button
+                      class="jointeam_inner_header_two_white"
+                      onclick="importData()">
+                      SELECT FILE
+                    </button>
+                  </span>
+                  <textarea
+                    name="message"
+                    class="jointeam_input_message myelem"
+                    placeholder="Message" required></textarea>
+  
+                  <span class="jointeam_bottom">
+                    <button class="jointeam_inner_bottom_CONTACT" id="btn">
+                      Send request
+                    </button>
+                  </span>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="contacts">
         <div class="contacts_page_title">CONTACTS</div>
         <div class="contacts_page_subtitle">
@@ -1898,18 +1957,18 @@
                   <input
                     class="contacts_input_name myelem"
                     name="name"
-                    placeholder="Name" />
+                    placeholder="Name" required/>
                   <input
                     type="email"
                     class="contacts_input_email myelem"
                     name="email"
                     id="email"
-                    placeholder="Email" />
+                    placeholder="Email" required/>
                     <p id="message"></p>
                   <textarea
                     name="message"
                     class="contacts_input_message form_message myelem"
-                    placeholder="Message"></textarea>
+                    placeholder="Message" required></textarea>
   
                   <span class="contacts_bottom">
                     <button class="contacts_inner_bottom_CONTACT" id="btn">
