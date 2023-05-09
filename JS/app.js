@@ -210,26 +210,7 @@ $(document).ready(function () {
   });
 });
 
-// $(".slider_slick_image").on(
-//   "init reInit afterChange",
-//   function (event, slick, currentSlide, nextSlide) {
-//     let currentSl = slick.$slides[currentSlide];
-//     let slick_imag = $(currentSl).find(".slick_imag");
-//     let text_clide = slick.$slider[0];
-//     $(".slick_imag").toggleClass("slick_imag_active");
-//     let slick_image_act = $(slick.$slider[0]).find("slick_image_text");
-//     // console.log(slick_image_act);
 
-//     // console.log(text_clide);
-
-//     if (!slick_image_act.hasClass("animate__animated")) {
-//       slick_image_act.addClass("animate__animated");
-//       setTimeout(() => {
-//         slick_image_act.removeClass("animate__animated");
-//       }, 1600);
-//     }
-//   }
-// );
 ////accordion
 
 let accordion_card = document.querySelectorAll(".FAQ_accordion_card");
@@ -266,43 +247,51 @@ button.addEventListener('click',()=>{
     }
 })
 
+
 //// form
-//// form
-let formAll = document.querySelectorAll(".subscribe");
-let form = Array.from(formAll);
-// console.log(form);
-let buttonn = document.querySelector("#btn");
+
+// let formAll = document.querySelectorAll(".subscribe");
+// let form = Array.from(formAll);
+// // console.log(form);
+// // let buttonn = document.querySelector("#btn");
 
 
 
-form.forEach((elem)=> {
-  console.log(elem)
+// form.forEach((elem)=> {
+//   console.log(elem)
 
-elem.addEventListener("submit", function (event) {
-  console.log(11111)
-  event.preventDefault();
-  let fname = document.querySelector(".contacts_input_name");
-  let email = document.querySelector(".contacts_input_email");
-  let message = document.querySelector(".form_message");
+// elem.addEventListener("submit", function (event) {
+//   console.log(this)
+//   event.preventDefault();
+//   let fname = document.querySelector(".contacts_input_name");
+//   let email = document.querySelector(".contacts_input_email");
+//   let message = document.querySelector(".form_message");
 
-  if (
-    fname.value.length !== 0 &&
-    email.value.length !== 0 &&
-    message.value.length !== 0
-  ) {
-    let myelem = document.querySelectorAll(".myelem");
-    myelem.forEach(function (elem) {
-      elem.parentNode.classList.remove("error");
-    });
-  } else {
-    let myelem = document.querySelectorAll(".myelem");
-    console.log(myelem);
+//   let parentAdd = event.target.parentElement;
+//   let myelempa= parentAdd.querySelectorAll(".myelem");
+//   let myelem = Array.from(myelempa);
+//   console.log(myelem);
 
-    myelem.forEach(function (elem) {
-      if (elem.value.length === 0) {
-        elem.parentNode.classList.add("error");
-      }
-    });
-  }
-});
-})
+//   if (
+//     fname.value.length !== 0 &&
+//     email.value.length !== 0 &&
+//     message.value.length !== 0
+//   ) {
+//     myelem.forEach(function (elem) {
+//       elem.parentNode.classList.remove("error");
+//     });
+//   } else {
+    
+//     myelem.forEach(function (elem) {
+//       if (elem.value.length === 0) {
+//         // console.log(elem);
+//         elem.parentNode.classList.add("error");
+//       }
+
+//     });
+//   }
+//      elem.parentNode.classList.remove("error");
+
+// });
+// })
+
